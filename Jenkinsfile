@@ -21,7 +21,7 @@ pipeline {
                 sh '''
                 docker stop pronew1 || true
                 docker rm pronew1 || true
-                docker run -d -p 5000:5000 --name pronew1 pronew1:latest
+                docker run -d -p 5001:5000 --name pronew1 pronew1:latest
                 '''
             }
         }
